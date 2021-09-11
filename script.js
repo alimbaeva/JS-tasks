@@ -58,3 +58,27 @@ for (var i = 1; i <= 5; i++) {
 }
 
 alert(result);
+
+//-------легкий вариант------
+
+var summ = +prompt('Введите сумму вклада: ');
+var percent = +prompt('Введите процент для начисления: ');
+
+percent = percent / 100
+
+// легкий вариант
+
+var year1 = summ + (summ * percent);
+var year2 = year1 + (year1 * percent);
+var year3 = year2 + (year2 * percent);
+var year4 = year3 + (year3 * percent);
+var year5 = year4 + (year4 * percent);
+
+alert(
+    'Изменение размера вклада по годам:n' +
+    '1 год : ' + year1.toFixed(2) + "рублейn\n" +
+    '2 год : ' + year2.toFixed(2) + "рублейn\n" +
+    '3 год : ' + year3.toFixed(2) + "рублейn\n" +
+    '4 год : ' + year4.toFixed(2) + "рублейn\n" +
+    '5 год : ' + year5.toFixed(2) + "рублейn\n"
+);
