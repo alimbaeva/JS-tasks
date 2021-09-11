@@ -42,3 +42,19 @@ comparAnswers(userAnswer, numbers[numbers.length - 1]);
 var n = getRandomNumber(numbers.length);
 userAnswer = +prompt('А как нсчет числа под номером ' + (n + 1) + '?');
 comparAnswers(userAnswer, numbers[n]);
+
+//-------------bank_programes ---------
+
+var summ = +prompt('Введите сумму вклада: ');
+var percent = +prompt('Введите процент для начисления: ');
+
+percent = percent / 100;
+
+var result = 'Изменение размера вклада по годам: \n';
+
+for (var i = 1; i <= 5; i++) {
+    summ = summ + (summ * percent);
+    result += i + "год: " + summ.toFixed(2) + "рублей.\n";
+}
+
+alert(result);
