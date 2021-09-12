@@ -1,3 +1,48 @@
+//----------- hello-------
+
+alert('привет , мир');
+alert('привет , земля');
+
+//---------- loops --------
+
+// вывести слово 5 раз на экран
+// Привет! <br/>
+// Привет! <br/>
+// Привет!<br/>
+// Привет!<br/>
+// Привет!<br/>
+// Привет!<br/> 
+
+
+for (var i = 0; i < 5; i++) {
+    document.write('Привет! <br/>');
+}
+// var i = 0;
+// while(i<5){
+// 	document.write('Привет! <br/>');
+// 	i ++; //i = i+1;
+
+//------ max ----------
+// найти максимальное число
+
+var a = + prompt('Введите первое число');
+var b = + prompt('Введите второе число');
+var max = a;
+if (a < b) {
+    max = b
+}
+// if (a>b){
+// 	var max =a;
+// } else if (a==b){
+// 	alert('числа равны');
+// 	max =a;
+// } else {
+// 	max = b;
+// }
+alert(max)
+
+
+
 //---- ARAY ---------
 
 function comparAnswers(userAnswer, answer) {
